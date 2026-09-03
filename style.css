@@ -1,35 +1,68 @@
-/* Box Model */
+/* Basic Reset */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
 }
 
 /* Header */
 header {
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navigation - Flexbox */
+header h1 {
+    font-size: 28px;
+}
+
+/* Navigation */
 nav {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
 }
 
 nav a {
     text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 8px 12px;
 }
 
-/* Sections */
+nav a:hover {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* Main Sections */
 section {
-    padding: 30px;
-    margin: 20px;
+    padding: 50px 40px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+p {
+    color: #555;
 }
 
 /* Projects */
@@ -42,10 +75,15 @@ section {
 .project-card {
     padding: 20px;
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-/* Form */
+.project-card:hover {
+    border-color: #999;
+}
+
+/* Contact Form */
 form {
     display: flex;
     flex-direction: column;
@@ -55,22 +93,33 @@ form {
 
 input,
 textarea {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 textarea {
     min-height: 120px;
 }
 
+/* Button */
 button {
-    padding: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 /* Footer */
 footer {
-    padding: 20px;
+    text-align: center;
+    padding: 25px;
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ddd;
 }
