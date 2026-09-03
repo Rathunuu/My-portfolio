@@ -1,3 +1,7 @@
+/* ==============================
+   BASIC RESET
+   ============================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,16 +10,20 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #222;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
     line-height: 1.6;
 }
 
-/* Header */
+
+/* ==============================
+   HEADER
+   ============================== */
+
 header {
-    background-color: #1f2937;
-    color: white;
+    background-color: #0b0b0b;
     padding: 25px 60px;
+    border-bottom: 1px solid #c9a227;
 
     display: flex;
     justify-content: space-between;
@@ -23,10 +31,15 @@ header {
 }
 
 header h1 {
+    color: #d4af37;
     font-size: 30px;
 }
 
-/* Navigation */
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
 nav {
     display: flex;
     gap: 25px;
@@ -34,53 +47,87 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 8px 14px;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #374151;
+    color: #d4af37;
+    background-color: #1a1a1a;
 }
 
-/* Main */
+
+/* ==============================
+   MAIN
+   ============================== */
+
 main {
     padding: 30px;
 }
 
-/* Sections */
+
+/* ==============================
+   SECTIONS
+   ============================== */
+
 section {
     max-width: 1000px;
-    margin: 25px auto;
-    padding: 50px;
-    background-color: white;
-    border: 1px solid #e5e7eb;
+    margin: 30px auto;
+    padding: 55px;
+    background-color: #151515;
+    border: 1px solid #2b2b2b;
     border-radius: 12px;
 }
 
-/* Home */
+
+/* ==============================
+   HOME
+   ============================== */
+
 #home {
     text-align: center;
-    padding: 80px 50px;
+    padding: 90px 50px;
+    border: 1px solid #c9a227;
 }
 
 #home h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    color: #d4af37;
+    font-size: 38px;
+    margin-bottom: 20px;
 }
 
-/* Headings */
+#home p {
+    color: #cccccc;
+    font-size: 17px;
+}
+
+
+/* ==============================
+   HEADINGS
+   ============================== */
+
 h2 {
-    font-size: 28px;
+    color: #d4af37;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 h3 {
+    color: #d4af37;
     margin-bottom: 10px;
 }
 
-/* Projects */
+p {
+    color: #cccccc;
+}
+
+
+/* ==============================
+   PROJECTS
+   ============================== */
+
 #projects {
     display: flex;
     flex-direction: column;
@@ -90,16 +137,20 @@ h3 {
 .project-card {
     padding: 25px;
     margin: 5px;
-    border: 1px solid #ddd;
+    background-color: #101010;
+    border: 1px solid #3a3a3a;
     border-radius: 10px;
-    background-color: #fafafa;
 }
 
 .project-card:hover {
-    border-color: #888;
+    border-color: #d4af37;
 }
 
-/* Contact Form */
+
+/* ==============================
+   CONTACT FORM
+   ============================== */
+
 form {
     display: flex;
     flex-direction: column;
@@ -108,6 +159,7 @@ form {
 }
 
 label {
+    color: #d4af37;
     font-weight: bold;
 }
 
@@ -115,34 +167,56 @@ input,
 textarea {
     width: 100%;
     padding: 13px;
-    border: 1px solid #ccc;
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border: 1px solid #444444;
     border-radius: 6px;
     font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d4af37;
+    outline: none;
 }
 
 textarea {
     min-height: 130px;
 }
 
+
+/* ==============================
+   BUTTON
+   ============================== */
+
 button {
     padding: 13px;
+    background-color: #d4af37;
+    color: #0b0b0b;
     border: none;
     border-radius: 6px;
-    background-color: #1f2937;
-    color: white;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #374151;
+    background-color: #f0cf5c;
 }
 
-/* Footer */
+
+/* ==============================
+   FOOTER
+   ============================== */
+
 footer {
     text-align: center;
     padding: 25px;
     margin-top: 30px;
-    background-color: #1f2937;
-    color: white;
+    background-color: #050505;
+    border-top: 1px solid #c9a227;
+}
+
+footer p {
+    color: #aaaaaa;
 }
