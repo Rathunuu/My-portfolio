@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,16 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f7fa;
+    background-color: #f4f6f8;
     color: #222;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #ffffff;
-    padding: 20px 40px;
-    border-bottom: 1px solid #ddd;
+    background-color: #1f2937;
+    color: white;
+    padding: 25px 60px;
 
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,7 @@ header {
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 /* Navigation */
@@ -35,91 +34,115 @@ nav {
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #222;
-    font-weight: bold;
-    padding: 8px 12px;
+    padding: 8px 14px;
+    border-radius: 6px;
 }
 
 nav a:hover {
-    background-color: #eee;
-    border-radius: 5px;
+    background-color: #374151;
 }
 
-/* Main Sections */
+/* Main */
+main {
+    padding: 30px;
+}
+
+/* Sections */
 section {
-    padding: 50px 40px;
-    margin: 20px auto;
     max-width: 1000px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    margin: 25px auto;
+    padding: 50px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+/* Home */
+#home {
+    text-align: center;
+    padding: 80px 50px;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 /* Headings */
 h2 {
-    margin-bottom: 15px;
-    font-size: 26px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #555;
+h3 {
+    margin-bottom: 10px;
 }
 
 /* Projects */
 #projects {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .project-card {
-    padding: 20px;
+    padding: 25px;
     margin: 5px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
+    background-color: #fafafa;
 }
 
 .project-card:hover {
-    border-color: #999;
+    border-color: #888;
 }
 
 /* Contact Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
+    gap: 12px;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
 }
 
 input,
 textarea {
-    padding: 12px;
+    width: 100%;
+    padding: 13px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 15px;
 }
 
 textarea {
-    min-height: 120px;
+    min-height: 130px;
 }
 
-/* Button */
 button {
-    padding: 12px;
+    padding: 13px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 6px;
+    background-color: #1f2937;
+    color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 button:hover {
-    opacity: 0.8;
+    background-color: #374151;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 25px;
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    background-color: #1f2937;
+    color: white;
 }
