@@ -1,6 +1,4 @@
-/* =========================
-   RESET
-========================= */
+/* General Styling */
 
 * {
     box-sizing: border-box;
@@ -8,10 +6,9 @@
     padding: 0;
 }
 
-
-/* =========================
-   BODY
-========================= */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -20,293 +17,147 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================
-   HEADER
-========================= */
+/* Navigation */
 
 header {
-    background-color: #0a0a0a;
-    padding: 25px 60px;
+    background-color: #111111;
+    padding: 20px;
     border-bottom: 1px solid #d4af37;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-header h1 {
-    color: #d4af37;
-    font-size: 32px;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
 
 nav {
     display: flex;
-    gap: 30px;
+    justify-content: center;
     align-items: center;
+    gap: 35px;
 }
 
 nav a {
-    color: #ffffff;
+    color: #d4af37;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 nav a:hover {
-    color: #d4af37;
-    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
-
-/* =========================
-   MAIN
-========================= */
-
-main {
-    padding: 40px 20px;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
+/* Sections */
 
 section {
     max-width: 1000px;
-    margin: 30px auto;
-    padding: 60px;
-
-    background-color: #121212;
-
-    border: 1px solid #292929;
-    border-radius: 15px;
+    margin: 0 auto;
+    padding: 70px 30px;
 }
 
-
-/* =========================
-   HOME
-========================= */
-
-#home {
-    text-align: center;
-    padding: 100px 50px;
-    border: 1px solid #d4af37;
-}
-
-#home h2 {
+h1 {
     color: #d4af37;
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
-#home p {
-    color: #cccccc;
-    font-size: 18px;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-#about h2 {
+h2 {
     color: #d4af37;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-#about p {
-    color: #cccccc;
-    font-size: 17px;
+h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
 }
 
+p {
+    color: #dddddd;
+    margin-bottom: 15px;
+}
 
-/* =========================
-   PROJECTS - CSS GRID
-========================= */
+/* Skills */
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    list-style: none;
+}
+
+#skills li {
+    background-color: #151515;
+    border: 1px solid #d4af37;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Projects - CSS Grid */
 
 #projects {
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 #projects h2 {
     grid-column: 1 / -1;
-
-    color: #d4af37;
-    font-size: 32px;
-    margin-bottom: 5px;
 }
 
-
-/* Project Cards */
-
 .project-card {
+    background-color: #151515;
+    border: 1px solid #d4af37;
     padding: 25px;
-    margin: 5px;
-
-    background-color: #0d0d0d;
-
-    border: 1px solid #333333;
     border-radius: 10px;
 }
 
-.project-card h3 {
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
     color: #d4af37;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #bbbbbb;
-}
-
-.project-card:hover {
-    border-color: #d4af37;
-}
-
-
-/* =========================
-   CONTACT FORM
-========================= */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    max-width: 600px;
-}
-
-label {
-    color: #d4af37;
+    text-decoration: none;
     font-weight: bold;
 }
 
-input,
-textarea {
-    width: 100%;
-
-    padding: 14px;
-
-    background-color: #0a0a0a;
+.project-card a:hover {
     color: #ffffff;
-
-    border: 1px solid #444444;
-    border-radius: 6px;
-
-    font-size: 15px;
 }
 
-input:focus,
-textarea:focus {
-    border-color: #d4af37;
-    outline: none;
+/* Contact */
+
+#contact a {
+    color: #d4af37;
+    text-decoration: none;
 }
 
-textarea {
-    min-height: 140px;
+#contact a:hover {
+    color: #ffffff;
 }
 
-
-/* =========================
-   BUTTON
-========================= */
-
-button {
-    padding: 14px;
-
-    background-color: #d4af37;
-    color: #0a0a0a;
-
-    border: none;
-    border-radius: 6px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #f1d46a;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: #050505;
-
-    padding: 30px;
-    margin-top: 40px;
-
-    text-align: center;
-
-    border-top: 1px solid #d4af37;
-}
-
-footer p {
-    color: #999999;
-}
-
-
-/* =========================
-   DAY 3 - MOBILE MEDIA QUERY
-========================= */
+/* Mobile Responsive Design */
 
 @media (max-width: 600px) {
 
-    header {
-        padding: 20px;
+    nav {
         flex-direction: column;
         gap: 15px;
     }
 
-    nav {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    main {
-        padding: 20px 10px;
-    }
-
     section {
-        padding: 35px 20px;
-        margin: 20px auto;
+        padding: 50px 20px;
     }
 
-    #home {
-        padding: 60px 20px;
+    h1 {
+        font-size: 36px;
     }
 
-    #home h2 {
-        font-size: 30px;
+    h2 {
+        font-size: 28px;
     }
 
-    /* Grid becomes one column on mobile */
     #projects {
         grid-template-columns: 1fr;
     }
 
-    #projects h2 {
-        grid-column: auto;
-    }
-
-    .project-card {
-        margin: 0;
+    #skills ul {
+        grid-template-columns: 1fr;
     }
 }
